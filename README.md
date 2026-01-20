@@ -1,16 +1,218 @@
-# llm_flutter
+# LLM Flutter 视频应用
 
-A new Flutter project.
+一个基于 Flutter 开发的现代化视频应用，支持多平台运行，采用深色主题设计，提供流畅的用户体验。
 
-## Getting Started
+## 🎯 项目概述
 
-This project is a starting point for a Flutter application.
+本项目是一个完整的视频类应用，包含以下核心功能：
 
-A few resources to get you started if this is your first Flutter project:
+- 🔐 用户登录/注册系统
+- 👑 VIP 会员中心
+- 📺 视频列表展示（支持网格/列表视图切换）
+- 📋 视频分类与筛选
+- ⭐ 收藏功能
+- 📊 观看历史记录
+- 💳 购买记录管理
+- 💬 意见反馈
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ 功能特点
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. 多平台支持
+- ✅ iOS
+- ✅ Android
+- ✅ Web
+- ✅ macOS
+- ✅ Linux
+- ✅ Windows
+
+### 2. 现代化 UI 设计
+- 🎨 深色主题设计
+- 📱 响应式布局
+- 🎭 流畅的动画效果
+- 🔄 支持网格/列表视图切换
+
+### 3. 完整的用户系统
+- 📝 账号注册
+- 🔑 密码登录
+- 📊 个人中心
+- 📱 登录状态管理
+
+### 4. 丰富的视频功能
+- 📺 视频分类浏览
+- 🔍 视频筛选
+- ⭐ 视频收藏
+- 📊 观看历史
+- 💳 购买记录
+
+### 5. VIP 会员系统
+- 👑 会员特权展示
+- 💎 多种会员套餐
+- 💰 会员购买入口
+
+## 🛠️ 技术栈
+
+| 技术/框架 | 版本 | 用途 |
+|---------|-----|-----|
+| Flutter | 3.10.4 | 跨平台应用开发框架 |
+| Dart | 3.10.4 | 编程语言 |
+| flutter_svg | ^2.2.3 | SVG 图标支持 |
+| cupertino_icons | ^1.0.8 | iOS 风格图标 |
+
+## 🚀 快速开始
+
+### 1. 环境要求
+
+- Flutter SDK 3.10.4 或更高版本
+- Dart SDK 3.10.4 或更高版本
+- Xcode (iOS 开发)
+- Android Studio (Android 开发)
+- Chrome (Web 开发)
+
+### 2. 安装步骤
+
+1. **克隆仓库**
+   ```bash
+   git clone https://github.com/Mike09811/flutter-.git
+   cd flutter-
+   ```
+
+2. **获取依赖**
+   ```bash
+   flutter pub get
+   ```
+
+3. **运行应用**
+   - iOS (模拟器)
+     ```bash
+     flutter run -d ios
+     ```
+   - Android (模拟器/设备)
+     ```bash
+     flutter run -d android
+     ```
+   - Web
+     ```bash
+     flutter run -d web
+     ```
+   - macOS
+     ```bash
+     flutter run -d macos
+     ```
+
+## 📁 项目结构
+
+```
+llm_flutter/
+├── assets/             # 静态资源文件
+│   └── images/         # 图片资源
+├── android/            # Android 平台代码
+├── ios/                # iOS 平台代码
+├── lib/                # Dart 源代码
+│   └── main.dart       # 应用入口
+├── linux/              # Linux 平台代码
+├── macos/              # macOS 平台代码
+├── test/               # 测试代码
+├── web/                # Web 平台代码
+├── windows/            # Windows 平台代码
+├── pubspec.yaml        # 项目依赖配置
+└── README.md           # 项目说明文档
+```
+
+## 🎮 使用说明
+
+### 1. 登录/注册
+- 首次使用请点击「注册」按钮创建账号
+- 已有账号直接输入账号密码登录
+
+### 2. 浏览视频
+- 在首页浏览推荐视频
+- 使用顶部导航切换视频分类
+- 使用筛选标签筛选感兴趣的内容
+- 点击「切换」按钮切换网格/列表视图
+
+### 3. VIP 会员
+- 点击「我的」>「开通VIP会员」进入会员中心
+- 浏览会员特权和套餐
+- 选择合适的套餐进行购买
+
+### 4. 个人中心
+- 查看个人信息
+- 管理收藏的视频
+- 查看观看历史
+- 查看购买记录
+- 提交意见反馈
+
+## 📱 界面预览
+
+### 首页
+- 支持网格/列表视图切换
+- 视频分类导航
+- 最新更新、本周最热等排序选项
+
+### 登录/注册页
+- 简洁的登录界面
+- 完整的注册流程
+- 表单验证
+
+### VIP 会员中心
+- 会员特权展示
+- 多种会员套餐
+- 购买入口
+
+### 个人中心
+- 用户信息展示
+- 功能菜单列表
+- 登录状态管理
+
+## 🔧 开发说明
+
+### 1. 代码规范
+- 遵循 Dart 官方代码规范
+- 使用 Flutter Lints 进行代码检查
+- 代码注释清晰
+
+### 2. 状态管理
+- 采用 Flutter 原生状态管理
+- 使用 StatefulWidget 管理页面状态
+- 使用 StatelessWidget 构建纯展示组件
+
+### 3. 网络请求
+- 当前使用模拟数据
+- 可根据实际需求接入真实 API
+
+### 4. 数据存储
+- 当前使用内存存储
+- 可扩展接入本地数据库（如 Hive、Sqflite）
+- 可扩展接入云端存储
+
+## 📝 待开发功能
+
+- [ ] 视频播放功能
+- [ ] 搜索功能
+- [ ] 评论功能
+- [ ] 分享功能
+- [ ] 推送通知
+- [ ] 深色/浅色主题切换
+
+## 📄 许可证
+
+本项目采用 MIT 许可证，详见 [LICENSE](LICENSE) 文件。
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📞 联系方式
+
+如有问题或建议，欢迎通过以下方式联系：
+
+- GitHub Issues: [https://github.com/Mike09811/flutter-/issues](https://github.com/Mike09811/flutter-/issues)
+
+## 🙏 致谢
+
+- 感谢 Flutter 团队提供优秀的跨平台开发框架
+- 感谢所有为项目做出贡献的开发者
+
+---
+
+**享受开发，享受生活！** 🎉
